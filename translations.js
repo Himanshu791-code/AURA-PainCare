@@ -1,0 +1,252 @@
+/**
+ * AURA-PainCare: AI Silent-Pain & Distress Monitor
+ * Bilingual Translations (English / हिन्दी)
+ */
+
+const TRANSLATIONS = {
+  en: {
+    systemTitle: "AURA-PainCare",
+    systemSubtitle: "AI Silent-Pain & Distress Monitoring System",
+    liveAiStatus: "24/7 Vision AI Active",
+    zeroHardwareBadge: "₹0 Hardware Dependency",
+    icuBed: "Bed 104 • Post-Op ICU",
+    cameraFeedTitle: "Patient Vision Stream",
+    landmarksActive: "468 3D Landmarks",
+    browFurrow: "AU4 Brow Furrowing",
+    eyeSquint: "AU6/7 Orbital Squint",
+    mouthGrimace: "AU25/27 Grimace / Jaw",
+    noseWrinkle: "AU9/10 Mid-Face Distress",
+    clinicalPainIndex: "Clinical Pain Index (0-10)",
+    statusMild: "Routine (Mild)",
+    statusModerate: "Observation (Moderate)",
+    statusSevere: "High-Priority Alert (Severe)",
+    statusCritical: "Emergency Distress (Critical)",
+    rangeMildTag: "Mild / Eyes / Breath",
+    rangeModTag: "Moderate Observation",
+    rangeSevTag: "Severe Pain Alarm",
+    rangeCritTag: "Critical Code Blue",
+    sustainedTimer: "Sustained Pain Trigger",
+    trendChartTitle: "60-Second Real-Time Pain Trend",
+    bodyMapTitle: "Module B: Non-Verbal Body Pain Map",
+    bodyMapSubtitle: "Click on anatomical zone or point to record pain site",
+    reportedLocus: "Active Pain Site",
+    noneSelected: "Unspecified / Diffuse Distress",
+    nurseStationTitle: "Module C: Central Nurse Station",
+    ackButton: "Acknowledge Alert",
+    testChimeBtn: "Test Medical Alarm",
+    emergencyAlertTitle: "HIGH PRIORITY NURSE CALL: ACUTE PAIN DETECTED!",
+    emergencyAlertSubtitle: "Bed 104 patient experiencing sustained distress (>6/10). Automatic AI Trigger.",
+    generateReportBtn: "Export Clinical Incident Report",
+    simTitle: "Clinical Evaluation Scenarios",
+    simResting: "Patient Resting (1.2/10)",
+    simSpasm: "Sudden Spasm (7.6/10)",
+    simGrimace: "Critical Grimace (9.5/10)",
+    simReset: "Return to Live Camera",
+    startCamera: "Start Camera",
+    stopCamera: "Pause Feed",
+    showMesh: "Face Mesh Overlay",
+    sensitivity: "AI Sensitivity",
+    hrLabel: "Heart Rate",
+    spo2Label: "SpO2 Oxygen",
+    respLabel: "Respiration",
+    logHeaderTime: "Time",
+    logHeaderBed: "Bed",
+    logHeaderScore: "Pain Score",
+    logHeaderLocus: "Site",
+    logHeaderStatus: "Status",
+    statusNormal: "Normal Monitoring",
+    statusDispatched: "Nurse Alert Dispatched",
+    statusAck: "Acknowledged by RN",
+    ackToast: "Alert acknowledged by Staff Nurse (Response time: <10s)",
+    uncomfortableTitle: "PATIENT UNCOMFORTABLE",
+    uncomfortableAlert: "Observation alert transmitted to Nurse Desk",
+    seriousTitle: "PATIENT IN SERIOUS DISTRESS",
+    seriousAlert: "Emergency alarm transmitted to Nurse Desk!",
+    standbyTitle: "Normal Routine Monitoring",
+    standbyAlert: "Nurse Dispatch: Standby",
+    alarmSentReceipt: "ALARM TRANSMITTED TO NURSE: YES",
+    alarmSentDetails: "Ward A Nurse Desk Alerted • Attending RN Notified • ID #ACK-104",
+    simCameraBtn: "Live Video Feed Simulator",
+    cameraHelpTitle: "Camera Access Notice",
+    cameraHelpDesc: "If camera is blocked on file:// protocol, run via START_AURA_PAINCARE.bat or click 'Live Video Feed Simulator' below.",
+    nightModeBtn: "🌙 Night / IR Vision",
+    nightModeActive: "☀️ Normal Lighting",
+    calibrateBtn: "⚙️ Threshold Calibrator",
+    calibModalTitle: "Clinical AI Threshold & Sensitivity Calibration",
+    calibModalSubtitle: "Live fine-tuning of FACS biomarkers, alert trigger thresholds & sustained time filters",
+    alarmThresholdLabel: "Clinical Emergency Alert Threshold (Pain Score)",
+    sustainedDurationLabel: "Sustained Pain Filter Duration (Seconds)",
+    presetStandard: "Standard ICU (6.0 / 1.2s)",
+    presetPostOp: "Post-Op Acute (4.8 / 0.8s)",
+    presetPediatric: "Pediatric FLACC (4.0 / 0.6s)",
+    presetDemo: "Exhibition Fast-Demo (5.2 / 0.9s)",
+    filterAll: "All Beds (10)",
+    filterCritical: "Critical Distress",
+    filterSevere: "High Pain Alert",
+    filterModerate: "Observation",
+    slaTimerTitle: "Nurse Response Latency SLA",
+    fullscreenBtn: "⛶ Fullscreen Presentation",
+    fullscreenExit: "🗗 Exit Fullscreen",
+    respirationTitle: "Optical Respiration & Dyspnea Waveform",
+    dyspneaAlert: "🚨 CRITICAL DYSPNEA / AIR HUNGER DETECTED",
+    dyspneaNormal: "NORMAL RESPIRATION",
+    simRespiratory: "Breathing Spasm (Dyspnea)",
+    aiAutoLocusTitle: "Autonomous Body Part Detection",
+    voiceBoardTitle: "Non-Verbal Patient ICU Voice Board",
+    voiceBoardSubtitle: "Intubated or weak patients tap, gaze, or speak commands to trigger an immediate natural voice announcement through the nurse station.",
+    voiceStartBtn: "Start Voice Assistive Mode",
+    voiceStopBtn: "Stop Listening",
+    voiceListeningStatus: "Listening for Hindi / English speech...",
+    voiceStandbyStatus: "Mic Standby • Ready to Listen",
+    voiceMicNotSupported: "Speech Recognition not supported in this browser",
+    voiceDemoPhrasesLabel: "🗣️ Demo Spoken Phrases:",
+    voicePromptHelp: "Click 'Start Voice Assistive Mode' and speak e.g. 'पानी चाहिए', 'Need Water', 'सांस नहीं आ रही'...",
+    qrBtnText: "Scan QR (Mobile)",
+    qrModalTitle: "Mobile Access QR Code",
+    qrModalSubtitle: "Scan with your smartphone to open AURA-PainCare live on any mobile device or bedside tablet",
+    qrModalInstructions: "Connect your phone to the same Wi-Fi or Hotspot as this computer, then scan the QR code using your Camera or Google Lens.",
+    qrDownloadBtn: "📥 Download Exhibition Poster",
+    qrCopyBtn: "📋 Copy Link"
+  },
+  hi: {
+    systemTitle: "ऑरा-पेनकेयर",
+    systemSubtitle: "एआई मूक-दर्द एवं कष्ट निगरानी प्रणाली",
+    liveAiStatus: "24/7 विज़न एआई सक्रिय",
+    zeroHardwareBadge: "₹0 अतिरिक्त हार्डवेयर लागत",
+    icuBed: "बेड 104 • पोस्ट-ऑप आईसीयू",
+    cameraFeedTitle: "मरीज का रीयल-टाइम विज़न फीड",
+    landmarksActive: "468 3D लैंडमार्क्स",
+    browFurrow: "AU4 भौंहें सिकोड़ना",
+    eyeSquint: "AU6/7 आंखें भींचना / स्क्विंट",
+    mouthGrimace: "AU25/27 जबड़ा / दर्द ग्रिमैस",
+    noseWrinkle: "AU9/10 चेहरे का तनाव",
+    clinicalPainIndex: "क्लिनिकल पेन इंडेक्स (0-10)",
+    statusMild: "सामान्य (सामान्य निगरानी)",
+    statusModerate: "मध्यम दर्द (अवलोकन)",
+    statusSevere: "उच्च-प्राथमिकता अलर्ट (गंभीर दर्द)",
+    statusCritical: "इमरजेंसी कष्ट (अति गंभीर)",
+    rangeMildTag: "माइल्ड / आँखें / श्वसन ≤3.0",
+    rangeModTag: "मध्यम प्रेक्षण (3.1 - 5.9)",
+    rangeSevTag: "गंभीर दर्द चेतावनी (6.0 - 8.4)",
+    rangeCritTag: "कोड ब्लू आपातकाल (8.5 - 10)",
+    sustainedTimer: "लगातार दर्द ट्रिगर टाइमर",
+    trendChartTitle: "60-सेकंड रीयल-टाइम दर्द ग्राफ",
+    bodyMapTitle: "मॉड्यूल B: नॉन-वर्बल बॉडी पेन मैप",
+    bodyMapSubtitle: "शरीर के अंग पर क्लिक करके दर्द का स्थान बताएं",
+    reportedLocus: "सक्रिय दर्द का स्थान",
+    noneSelected: "अनिर्दिष्ट / सामान्य कष्ट",
+    nurseStationTitle: "मॉड्यूल C: सेंट्रल नर्स स्टेशन",
+    ackButton: "अलर्ट स्वीकारें (Ack)",
+    testChimeBtn: "अलार्म टेस्ट करें",
+    emergencyAlertTitle: "उच्च प्राथमिकता नर्स कॉल: तीव्र दर्द का पता चला!",
+    emergencyAlertSubtitle: "बेड 104 के मरीज को बिना बोले लगातार तीव्र दर्द (>6/10) हो रहा है। ऑटोमैटिक एआई कॉल।",
+    generateReportBtn: "क्लिनिकल रिपोर्ट डाउनलोड करें",
+    simTitle: "क्लिनिकल डेमो सिमुलेशन",
+    simResting: "मरीज विश्राम में (1.2/10)",
+    simSpasm: "अचानक दर्द / ऐंठन (7.6/10)",
+    simGrimace: "अति गंभीर कष्ट (9.5/10)",
+    simReset: "लाइव कैमरा पर लौटें",
+    startCamera: "कैमरा चालू करें",
+    stopCamera: "कैमरा रोकें",
+    showMesh: "फेस मेश दिखाएं",
+    sensitivity: "एआई संवेदनशीलता",
+    hrLabel: "हृदय गति (HR)",
+    spo2Label: "ऑक्सीजन (SpO2)",
+    respLabel: "श्वसन दर",
+    logHeaderTime: "समय",
+    logHeaderBed: "बेड",
+    logHeaderScore: "दर्द स्कोर",
+    logHeaderLocus: "स्थान",
+    logHeaderStatus: "स्थिति",
+    statusNormal: "सामान्य निगरानी",
+    statusDispatched: "नर्स अलर्ट भेजा गया",
+    statusAck: "नर्स द्वारा स्वीकारा गया",
+    ackToast: "स्टाफ नर्स द्वारा अलर्ट स्वीकारा गया (प्रतिक्रिया समय: <10s)",
+    uncomfortableTitle: "मरीज असहज महसूस कर रहा है",
+    uncomfortableAlert: "नर्स स्टेशन को अवलोकन अलर्ट भेजा जा चुका है",
+    seriousTitle: "मरीज की हालत गंभीर हो रही है!",
+    seriousAlert: "नर्स के पास आपातकालीन अलार्म भेजा जा चुका है!",
+    standbyTitle: "सामान्य नियमित निगरानी",
+    standbyAlert: "नर्स प्रेषण: स्टैंडबाय",
+    alarmSentReceipt: "नर्स के पास अलार्म जा चुका है: हाँ",
+    alarmSentDetails: "वार्ड A नर्स डेस्क सूचित • ऑन-ड्यूटी नर्स सतर्क • ID #ACK-104",
+    simCameraBtn: "लाइव वीडियो फीड सिम्युलेटर",
+    cameraHelpTitle: "कैमरा सहायता सूचना",
+    cameraHelpDesc: "यदि file:// पर कैमरा ब्लॉक है, तो START_AURA_PAINCARE.bat चलाएं या नीचे 'लाइव वीडियो फीड सिम्युलेटर' दबाएं।",
+    nightModeBtn: "🌙 नाइट / IR विज़न",
+    nightModeActive: "☀️ सामान्य रोशनी",
+    calibrateBtn: "⚙️ थ्रेशोल्ड कैलिब्रेशन",
+    calibModalTitle: "क्लिनिकल AI थ्रेशोल्ड एवं सेंसिटिविटी कैलिब्रेशन",
+    calibModalSubtitle: "FACS बायोमार्कर, अलार्म ट्रिगर थ्रेशोल्ड एवं सस्टेन्ड समय फिल्टर का लाइव समायोजन",
+    alarmThresholdLabel: "क्लिनिकल इमरजेंसी अलार्म थ्रेशोल्ड (पेन स्कोर)",
+    sustainedDurationLabel: "सस्टेन्ड पेन फिल्टर अवधि (सेकंड)",
+    presetStandard: "स्टैंडर्ड ICU (6.0 / 1.2s)",
+    presetPostOp: "पोस्ट-ऑप एक्यूट (4.8 / 0.8s)",
+    presetPediatric: "बाल चिकित्सा FLACC (4.0 / 0.6s)",
+    presetDemo: "विज्ञान मेला फास्ट-डेमो (5.2 / 0.9s)",
+    filterAll: "सभी 10 बेड",
+    filterCritical: "अति गंभीर अलर्ट",
+    filterSevere: "तीव्र दर्द अलर्ट",
+    filterModerate: "अवलोकन",
+    slaTimerTitle: "नर्स रिस्पॉन्स टाइम (SLA)",
+    fullscreenBtn: "⛶ फुलस्क्रीन प्रेजेंटेशन",
+    fullscreenExit: "🗗 फुलस्क्रीन से बाहर निकलें",
+    respirationTitle: "ऑप्टिकल श्वसन एवं सांस कष्ट वेवफॉर्म",
+    dyspneaAlert: "🚨 तीव्र श्वसन कष्ट / सांस फूलना डिटेक्ट हुआ!",
+    dyspneaNormal: "सामान्य श्वसन",
+    simRespiratory: "सांस फूलना (Dyspnea Spasm)",
+    aiAutoLocusTitle: "एआई स्वचालित अंग पहचान",
+    voiceBoardTitle: "नॉन-वर्बल पेशेंट आईसीयू वॉयस बोर्ड",
+    voiceBoardSubtitle: "वेंटिलेटर या असहाय मरीज बोलकर, छूकर या संकेत देकर नर्स डेस्क पर तुरंत प्राकृतिक आवाज में मदद मांग सकते हैं।",
+    voiceStartBtn: "वॉयस असिस्टेंट शुरू करें",
+    voiceStopBtn: "माइक्रोफोन बंद करें",
+    voiceListeningStatus: "सुन रहा है... हिन्दी या अंग्रेजी में बोलें...",
+    voiceStandbyStatus: "माइक स्टैंडबाय • सुनने के लिए तैयार",
+    voiceMicNotSupported: "इस ब्राउज़र में स्पीच API समर्थित नहीं है",
+    voiceDemoPhrasesLabel: "🗣️ डेमो बोले जाने वाले वाक्य:",
+    voicePromptHelp: "'वॉयस असिस्टेंट शुरू करें' दबाएं और बोलें: 'पानी चाहिए', 'सांस नहीं आ रही', 'डॉक्टर बुलाओ'...",
+    qrBtnText: "क्यूआर कोड (मोबाइल)",
+    qrModalTitle: "मोबाइल एक्सेस क्यूआर कोड",
+    qrModalSubtitle: "किसी भी स्मार्टफोन या बेडसाइड टैबलेट पर AURA-PainCare लाइव खोलने के लिए स्कैन करें",
+    qrModalInstructions: "अपने फोन को उसी वाई-फाई या हॉटस्पॉट से कनेक्ट करें जिससे यह लैपटॉप जुड़ा है, फिर कैमरा या गूगल लेंस से स्कैन करें।",
+    qrDownloadBtn: "📥 प्रदर्शनी पोस्टर डाउनलोड करें",
+    qrCopyBtn: "📋 लिंक कॉपी करें"
+  }
+};
+
+class TranslationManager {
+  constructor() {
+    this.currentLang = 'en';
+  }
+
+  setLanguage(lang) {
+    if (TRANSLATIONS[lang]) {
+      this.currentLang = lang;
+      this.applyTranslations();
+      const langBtn = document.getElementById('lang-toggle-btn');
+      if (langBtn) {
+        langBtn.innerText = lang === 'en' ? 'हिन्दी (Hindi)' : 'English';
+      }
+    }
+  }
+
+  toggle() {
+    this.setLanguage(this.currentLang === 'en' ? 'hi' : 'en');
+  }
+
+  get(key) {
+    return (TRANSLATIONS[this.currentLang] && TRANSLATIONS[this.currentLang][key]) || key;
+  }
+
+  applyTranslations() {
+    const dict = TRANSLATIONS[this.currentLang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) {
+        el.innerText = dict[key];
+      }
+    });
+  }
+}
+
+window.translator = new TranslationManager();
