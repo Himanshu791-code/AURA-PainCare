@@ -19,7 +19,7 @@ if sys.platform == 'win32' and hasattr(sys.stdout, 'reconfigure'):
     except Exception:
         pass
 
-PORT = 8000
+PORT = int(os.enviorn.get("PORT",8080))
 HOST = "0.0.0.0"  # Bind to all network interfaces so mobile phones can connect via Wi-Fi/Hotspot
 
 # Set root directory to aura_paincare folder
